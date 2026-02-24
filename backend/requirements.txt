@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic-settings
+openai
+anthropic
+redis
+semantic-router
+sentence-transformers
+qdrant-client
+python-dotenv
+pytest
+httpx
