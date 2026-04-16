@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel-assist</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pixel-assist</h1>
+            <p>Your AI Coding Assistant</p>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message system">
+                    <div class="message-content">
+                        Welcome to Pixel-assist! I'm your AI coding assistant. 
+                        How can I help you today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Type your message..."
+                    rows="3"
+                ></textarea>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>Model</h3>
+                <select id="modelSelect">
+                    <option value="">Auto (Budget-based)</option>
+                </select>
+                <button id="discoverModelsBtn">Discover Models</button>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Custom Models</h3>
+                <input type="text" id="customModelName" placeholder="Model name (e.g., llama2)">
+                <input type="text" id="customModelUrl" placeholder="Base URL (e.g., http://localhost:11434)">
+                <select id="customModelEndpoint">
+                    <option value="/api/generate">Ollama (/api/generate)</option>
+                    <option value="/v1/chat/completions">OpenAI Compatible (/v1/chat)</option>
+                </select>
+                <button id="addCustomModelBtn">Add Model</button>
+                <div id="customModelsList"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Personality</h3>
+                <select id="personalitySelect">
+                    <option value="default">Default</option>
+                    <option value="developer">Developer</option>
+                    <option value="reviewer">Code Reviewer</option>
+                    <option value="debugger">Debugger</option>
+                    <option value="docs">Documentation</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Instructions</h3>
+                <textarea id="customInstructions" placeholder="Custom instructions..." rows="3"></textarea>
+                <button id="saveInstructionsBtn">Save</button>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Rules</h3>
+                <input type="text" id="newRule" placeholder="Add rule...">
+                <button id="addRuleBtn">Add</button>
+                <div id="rulesList"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Sessions</h3>
+                <button id="newSessionBtn">New Chat</button>
+                <div id="sessionList"></div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Stats</h3>
+                <div id="stats"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

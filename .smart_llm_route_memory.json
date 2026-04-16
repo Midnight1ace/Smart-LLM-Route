@@ -1,0 +1,110 @@
+[
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write hello world",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:00:46.334012",
+    "success": true,
+    "latency_ms": 0.029087066650390625,
+    "cost": 0.002,
+    "feedback": null
+  },
+  {
+    "id": "req_2",
+    "task_type": "coding",
+    "task_description": "Write a function",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:00:46.335834",
+    "success": true,
+    "latency_ms": 0.027894973754882812,
+    "cost": 0.002,
+    "feedback": null
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write hello world",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:00:46.334012",
+    "success": true,
+    "latency_ms": 0.029087066650390625,
+    "cost": 0.002,
+    "feedback": "positive"
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write hello world",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:02:36.997176",
+    "success": true,
+    "latency_ms": 0.036716461181640625,
+    "cost": 0.002,
+    "feedback": null
+  },
+  {
+    "id": "req_2",
+    "task_type": "coding",
+    "task_description": "Write a function",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:02:36.997998",
+    "success": true,
+    "latency_ms": 0.024080276489257812,
+    "cost": 0.002,
+    "feedback": null
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write hello world",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:02:36.997176",
+    "success": true,
+    "latency_ms": 0.036716461181640625,
+    "cost": 0.002,
+    "feedback": "positive"
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write a hello world function in Python",
+    "model": "claude-3-opus",
+    "provider": "anthropic",
+    "timestamp": "2026-04-16T18:02:53.589936",
+    "success": true,
+    "latency_ms": 0.03886222839355469,
+    "cost": 0.015,
+    "feedback": null
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write hello world",
+    "model": "gpt-3.5-turbo",
+    "provider": "openai",
+    "timestamp": "2026-04-16T18:51:28.068601",
+    "success": true,
+    "latency_ms": 0.0667572021484375,
+    "cost": 0.002,
+    "feedback": null
+  },
+  {
+    "id": "req_1",
+    "task_type": "coding",
+    "task_description": "Write a hello world function in Python",
+    "model": "claude-3-opus",
+    "provider": "anthropic",
+    "timestamp": "2026-04-16T18:51:46.840029",
+    "success": true,
+    "latency_ms": 0.07343292236328125,
+    "cost": 0.015,
+    "feedback": null
+  }
+]

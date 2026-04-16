@@ -1,0 +1,41 @@
+providers:
+  openai:
+    api_key: env:OPENAI_API_KEY
+    models: [gpt-4, gpt-3.5-turbo]
+  anthropic:
+    api_key: env:ANTHROPIC_API_KEY
+    models: [claude-3-opus, claude-3-sonnet]
+  local:
+    api_key: ""
+    base_url: http://localhost:11434
+    models: [llama2, mistral]
+
+models:
+  gpt-4:
+    provider: openai
+    cost_per_1k: 0.03
+    capabilities: [coding, reasoning, creative]
+  gpt-3.5-turbo:
+    provider: openai
+    cost_per_1k: 0.002
+    capabilities: [simple_coding, basic_reasoning]
+  claude-3-opus:
+    provider: anthropic
+    cost_per_1k: 0.015
+    capabilities: [coding, reasoning, creative]
+  claude-3-sonnet:
+    provider: anthropic
+    cost_per_1k: 0.003
+    capabilities: [coding, reasoning]
+  llama2:
+    provider: local
+    cost_per_1k: 0.0
+    capabilities: [simple_coding, basic_reasoning]
+  mistral:
+    provider: local
+    cost_per_1k: 0.0
+    capabilities: [simple_coding, basic_reasoning]
+
+defaults:
+  route_strategy: cost_optimized
+  max_cost_per_request: 0.50
